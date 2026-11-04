@@ -30,7 +30,7 @@ Exibição do resultado de cada rodada.
 
 📷 Demonstração
 
-<img src="./img.png">
+![Demonstração do Jokenpô](./img.png)
 
 
 📚 Aprendizados
