@@ -30,7 +30,7 @@ Exibição do resultado de cada rodada.
 
 📷 Demonstração
 
-![alt text]({7DAF8FC8-4A5B-466C-B4AD-CE506BAEAB97}.png)
+<img src="./img.png">
 
 
 📚 Aprendizados
