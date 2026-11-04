@@ -3,33 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JoKenPo</title>
+    <title>JoKenPô</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-   <div class="container">
-    <h1>JoKenPô</h1>
-       
+    <main class="container">
+        <h1>JoKenPô</h1>
+        <p class="subtitle">Escolha sua jogada e enfrente a Alexa.</p>
+
+        <section class="scoreboard" aria-label="Placar">
+            <div class="score-card score-card--human">
+                <span class="score-label">Você</span>
+                <span class="score-value" id="human-score">0</span>
+            </div>
+            <div class="score-card score-card--machine">
+                <span class="score-label">Alexa</span>
+                <span class="score-value" id="machine-score">0</span>
+            </div>
+        </section>
+
+        <section class="arena" aria-label="Rodada atual">
+            <div class="pick" id="human-pick" aria-label="Sua jogada">?</div>
+            <span class="versus" aria-hidden="true">vs</span>
+            <div class="pick" id="machine-pick" aria-label="Jogada da Alexa">?</div>
+        </section>
+
+        <p class="result" role="status" aria-live="polite">Faça sua jogada</p>
+
         <div class="buttons">
-            <button id="rock" onclick="playHuman('rock')">&#x1F44A</button>
-            <button id="paper" onclick="playHuman('paper')">&#x1f590</button>
-            <button id="scissors" onclick="playHuman('scissors')">&#x270c</button>    
-        </div> 
-
-        <p class="result"></p>
-        
-        
-    <p class="score">Sua pontuação: <span id="human-score">0</span> </p>
-    <p class="machine-score">Pontuação da Alexa: <span id="machine-score">0</span></p>
-
-   </div>     
-
-    
-</body>
+            <button id="rock" onclick="playHuman('rock')">
+                <span class="emoji">&#x1F44A;</span>
+                <span class="label">Pedra</span>
+            </button>
+            <button id="paper" onclick="playHuman('paper')">
+                <span class="emoji">&#x1F590;&#xFE0F;</span>
+                <span class="label">Papel</span>
+            </button>
+            <button id="scissors" onclick="playHuman('scissors')">
+                <span class="emoji">&#x270C;&#xFE0F;</span>
+                <span class="label">Tesoura</span>
+            </button>
+        </div>
+    </main>
 
     <script src="./script.js"></script>
-
+</body>
 </html>
